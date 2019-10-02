@@ -21,11 +21,13 @@ p {
 header {
     width: 1280px;
     margin: 0 auto;
+
     .top-header {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        margin-top: 30px;
 
         .logo {
             text-transform: uppercase;
@@ -70,6 +72,7 @@ main {
         height: 90vh;
         position: relative;
         text-align: center;
+
         h1 {
             color: white;
             font-size: 71px;
@@ -78,6 +81,7 @@ main {
             font-family: 'Montserrat', sans-serif;
             position: absolute;
             top: 30%;
+
             span {
                 color: $mainOrange;
             }
@@ -91,18 +95,20 @@ main {
     }
 
     .promo {
-        width: 950px;
+        width: 1180px;
         margin: 0 auto;
         height: 100vh;
         display: flex;
         flex-direction: row;
         position: relative;
+
         .promo__left-block {
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin: 30px;
+
             h3 {
                 color: #ffffff;
                 text-align: right;
@@ -110,35 +116,229 @@ main {
                 font-size: 48px;
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
-                margin-top: 27px;
+                margin-top: 40px;
+                margin-bottom: 207px;
+                margin-right: 30px;
+                position: relative;
+
                 span {
                     color: $mainOrange;
                 }
             }
+
+            h3:after {
+                content: "";
+                display: block;
+                background: $mainOrange;
+                width: 5px;
+                height: 265px;
+                position: absolute;
+                top: 10px;
+                right: -50px;
+            }
+
             img {
                 margin-top: 40px;
             }
         }
+
         .promo__right-block {
             width: 50%;
             margin: 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             p {
                 line-height: 1.5;
+
                 span {
                     // font-weight: bold;
                     color: $mainOrange;
                 }
             }
         }
+
         .arr-down {
             position: absolute;
             bottom: 50px;
             right: 50%;
         }
     }
+
+    .slider {
+        width: 1180px;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+
+            span {
+                color: $mainOrange;
+            }
+        }
+
+        .slider-center {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 180px;
+
+            img {
+                border: 2px solid red;
+            }
+        }
+
+        .arr-down {
+            position: absolute;
+            bottom: 50px;
+            right: 50%;
+        }
+    }
+
+    .price {
+        width: 1180px;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 48px;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+
+            span {
+                color: $mainOrange;
+            }
+        }
+
+        .price__main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .left {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                button {
+                    font-size: 36px;
+                    color: #ccc;
+                    width: 360px;
+                    height: 90px;
+                    margin: 10px;
+                    background: none;
+                    border: none;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    outline: none;
+                }
+
+                button[autofocus] {
+                    background: #ffffff;
+                    color: #000;
+                }
+
+                button:after {
+                    content: "";
+                    display: block;
+                    background: $mainOrange;
+                    width: 8px;
+                    height: 300px;
+                    position: absolute;
+                    top: 10px;
+                    right: 30px;
+                }
+
+            }
+
+            .right {
+                width: 60%;
+
+                h5 {
+                    color: $mainOrange;
+                    font-size: 36px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .arr-down {
+            position: absolute;
+            bottom: 50px;
+            right: 50%;
+        }
+    }
+
+    .contacts {
+        width: 1180px;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 30px;
+
+            h3 {
+                color: #ffffff;
+                text-align: right;
+                text-transform: uppercase;
+                font-size: 48px;
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                margin-top: 40px;
+                margin-bottom: 207px;
+                margin-right: 30px;
+                position: relative;
+
+                span {
+                    color: $mainOrange;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// Слайдер 
+.slick-prev:before {
+    content: url(/build/img/arr-left.png);
+    position: absolute;
+    left: -40px;
+    top: -25px;
+}
+
+.slick-next:before {
+    content: url(/build/img/arr-right.png);
+    position: absolute;
+    left: 25px;
+    top: -25px;
 }
 
 /* Меню бургер */
