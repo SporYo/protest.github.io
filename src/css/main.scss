@@ -260,11 +260,6 @@ main {
                     outline: none;
                 }
 
-                button[autofocus] {
-                    background: #ffffff;
-                    color: #000;
-                }
-
                 button:after {
                     content: "";
                     display: block;
@@ -276,9 +271,14 @@ main {
                     right: 30px;
                 }
 
+                .autofocus {
+                    background: #ffffff;
+                    color: #000;
+                }
+
             }
 
-            .right {
+            .standart-block {
                 width: 60%;
 
                 h5 {
@@ -288,7 +288,7 @@ main {
                 }
             }
 
-            .right2 {
+            .pro-block {
                 width: 60%;
                 display: none;
 
@@ -299,7 +299,7 @@ main {
                 }
             }
 
-            .right3 {
+            .premium-block {
                 width: 60%;
                 display: none;
 

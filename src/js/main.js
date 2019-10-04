@@ -55,18 +55,34 @@
     });
 });
 
+
+
 function replace() {
-  document.querySelector(".right").style.display="block";
-  document.querySelector(".right2").style.display="none";
-  document.querySelector(".right3").style.display="none";
+  document.querySelector(".standart-block").style.display="block";
+  document.querySelector(".pro-block").style.display="none";
+  document.querySelector(".premium-block").style.display="none";
+
+  document.querySelector(".standart").classList.add('autofocus');
+  document.querySelector(".pro").classList.remove('autofocus');
+  document.querySelector(".premium").classList.remove('autofocus');
 }
+
 function replace2() {
-  document.querySelector(".right").style.display="none";
-  document.querySelector(".right2").style.display="block";
-  document.querySelector(".right3").style.display="none";
+  document.querySelector(".standart-block").style.display="none";
+  document.querySelector(".pro-block").style.display="block";
+  document.querySelector(".premium-block").style.display="none";
+
+  document.querySelector(".standart").classList.remove('autofocus');
+  document.querySelector(".pro").classList.add('autofocus');
+  document.querySelector(".premium").classList.remove('autofocus');
 }
+
 function replace3() {
-  document.querySelector(".right").style.display="none";
-  document.querySelector(".right2").style.display="none";
-  document.querySelector(".right3").style.display="block";
+  document.querySelector(".standart-block").style.display="none";
+  document.querySelector(".pro-block").style.display="none";
+  document.querySelector(".premium-block").style.display="block";
+
+  document.querySelector(".standart").classList.remove('autofocus');
+  document.querySelector(".pro").classList.remove('autofocus');
+  document.querySelector(".premium").classList.add('autofocus');
 }
